@@ -1,0 +1,64 @@
+<button class="btn btn-primary mt-3" (click)="goBack()"><i class="fa fa-angle-left"></i> Back</button>
+<h2 class="mt-3 mb-3 text-primary">of()</h2>
+<!-- of Examples -->
+<div class="row">
+  <!-- Example 1 -->
+  <div class="col-md-6">
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>of String: </strong> of('Reddy', 'Aruna', 'Mohan')
+    </p>
+    <hr>
+    <ul id="elcontainer"></ul>
+  </div>
+
+  <!-- Example 2 -->
+  <div class="col-md-6">
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>of Object: </strong> of(&#123;a: 'Reddy', b:'Aruna', c:'Mohan'&#125;)
+    </p>
+    <hr>
+    <ul>
+      <li>{{obMsg.a}}</li>
+      <li>{{obMsg.b}}</li>
+      <li>{{obMsg.c}}</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="mt-3 mb-3 text-primary">from()</h2>
+
+<!-- From -->
+<div class="row">
+  <!-- from array -->
+  <div class="col-md-4">
+    <strong>Array</strong>
+    <hr>
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>From Array: </strong> from(['Aruna', 'Mohan', 'Reddy'])
+    </p>
+    <hr>
+    <ul id="elcontainer3"></ul>
+  </div>
+
+  <!-- from promise -->
+  <div class="col-md-4">
+    <strong>Promise</strong>
+    <hr>
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>From Promise: </strong> Promise to Observable
+    </p>
+    <hr>
+    <ul id="elcontainer4"></ul>
+  </div>
+
+  <!-- from String -->
+  <div class="col-md-4">
+    <strong>String</strong>
+    <hr>
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>From String: </strong> String to Observable
+    </p>
+    <hr>
+    <ul id="elcontainer5"></ul>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div><strong>{{myValue}}</strong></div>
+
+<div class="row">
+    <!-- Example 1 -->
+    <div class="col-md-4">
+        <strong>Ex-1 : Promise</strong>
+        <hr>
+        <button class="btn btn-primary" (click)="buyLaptop()">Buy Laptop</button>
+        <hr>
+        <div id="result1">
+            {{laptop}}
+        </div>
+    </div>
+     <!-- Example 2 -->
+     <div class="col-md-4">
+        <strong>Ex-2 : Async / Await</strong>
+        <hr>
+        <button class="btn btn-primary" (click)="getData()">Get Data</button>
+        <hr>
+        <div id="result2">
+            {{asyncawait}}
+        </div>
+    </div>
+     <!-- Example 3 -->
+     <div class="col-md-4">
+        <strong>Ex-3 : Fetch API</strong>
+        <hr>
+        <button class="btn btn-primary" (click)="getFetchData()">Buy Laptop</button>
+        <hr>
+        <div id="result3">
+            {{fetchData | json}}
+        </div>
+    </div>
+</div>
+

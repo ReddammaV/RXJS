@@ -1,0 +1,83 @@
+<button class="btn btn-primary mt-3" (click)="goBack()"><i class="fa fa-angle-left"></i> Back</button>
+<h2 class="my-3 text-primary">Map Operator</h2>
+
+<div class="row">
+    <!-- Ex - 1 -->
+    <div class="col-md-4">
+        <strong>Ex - 1</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> 'Video' + data
+        </p>
+        <br>
+        <p>Message <strong class="text-success">{{msg1}}</strong></p>
+    </div>
+
+    <!-- Ex - 2 -->
+    <div class="col-md-4">
+        <strong>Ex - 2</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> Map Data
+        </p>
+        <br>
+        <p>Message <strong class="text-success">{{msg2}}</strong></p>
+    </div>
+
+    <!-- Ex - 3 -->
+    <div class="col-md-4">
+        <strong>Ex - 3</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> Data By array
+        </p>
+        <br>
+        <ul id="elcontainer"></ul>
+    </div>
+
+    <!-- Ex - 4 -->
+    <div class="col-md-4">
+        <strong>Ex - 3</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> Data By Object
+        </p>
+        <br>
+        <ul>
+            <li *ngFor="let item of myBootcamps">
+                <!-- Id: {{item.id}} | Name: {{item.name}} | Age: {{item.age}} -->
+                {{item.name}}
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ex - 5 -->
+    <div class="col-md-4">
+        <strong>Ex - 3</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> Data By API
+        </p>
+        <br>
+        <ul>
+            <li *ngFor="let item of bootcamps">
+                {{item.name}}
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ex - 6 -->
+    <div class="col-md-4">
+        <strong>Ex - 3</strong>
+        <hr>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Map: </strong> Json Typicode todos result only with id and title (ignore userId and completed)
+        </p>
+        <br>
+        <ul>
+            <li *ngFor="let item of todos | slice:0:7">
+                {{item.title}}
+            </li>
+        </ul>
+    </div>
+</div>

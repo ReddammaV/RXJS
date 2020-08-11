@@ -1,0 +1,32 @@
+<!-- <loading-bar #loadingBar [height]="height" [color]="color" [runInterval]="runInterval"></loading-bar> -->
+
+<button class="btn btn-primary mt-3" (click)="goBack()"><i class="fa fa-angle-left"></i> Back</button>
+<h2 class="my-3 text-primary">DebounceTime & DistinctUntilChanged Operators</h2>
+
+<div class="row">
+    <!-- Ex - 1 -->
+    <div class="col-md-6">
+        <strong>Ex - 1 <span class="text-primary">DebounceTime</span></strong>
+        <hr>
+        <div class="from-group row">
+            <label class="col-sm-2 col-form-label">Search...</label>
+            <div class="col-sm-10">
+                <input #myInput type="text" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <span *ngIf="reqData">Requested Data: <strong class="text-success">{{reqData}}</strong></span>
+    </div>
+
+    <!-- Ex - 2 -->
+    <div class="col-md-6">
+        <strong>Ex - 2 <span class="text-primary">DistinctUntilChanged</span></strong>
+        <hr>
+        <div class="from-group row">
+            <label class="col-sm-2 col-form-label">Search...</label>
+            <div class="col-sm-10">
+                <input #myInput2 type="text" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <span *ngIf="reqData2">Requested Data: <strong class="text-success">{{reqData2}}</strong></span>
+    </div>
+</div>
