@@ -14,6 +14,12 @@ import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebounceComponent } from './debounce/debounce.component';
 import { SubjectComponent } from './subject/subject.component';
+import { ReplaysubjectComponent } from './replaysubject/replaysubject.component';
+import { AsyncsubjectComponent } from './asyncsubject/asyncsubject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
+import { MergemapComponent } from './mergemap/mergemap.component';
+import { ConcatmapComponent } from './concatmap/concatmap.component';
 
 const routes: Routes = [
   { path: '', component: ObservablesComponent },
@@ -30,6 +36,12 @@ const routes: Routes = [
   { path: 'retry', component: RetryComponent },
   { path: 'debounce', component: DebounceComponent },
   { path: 'subject', component: SubjectComponent },
+  { path: 'replaysubject', component: ReplaysubjectComponent },
+  { path: 'asyncsubject', component: AsyncsubjectComponent },
+  { path: 'concat', component: ConcatComponent },
+  { path: 'merge', component: MergeComponent },
+  { path: 'mergemap', component: MergemapComponent },
+  { path: 'concatmap', component: ConcatmapComponent },
 ];
 
 @NgModule({

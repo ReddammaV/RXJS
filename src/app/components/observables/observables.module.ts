@@ -19,9 +19,15 @@ import { SubjectComponent } from './subject/subject.component';
 import { Comp1Component } from './subject/comp1/comp1.component';
 import { Comp2Component } from './subject/comp2/comp2.component';
 import { Comp3Component } from './subject/comp3/comp3.component';
+import { ReplaysubjectComponent } from './replaysubject/replaysubject.component';
+import { AsyncsubjectComponent } from './asyncsubject/asyncsubject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
+import { MergemapComponent } from './mergemap/mergemap.component';
+import { ConcatmapComponent } from './concatmap/concatmap.component';
 
 @NgModule({
-  declarations: [ObservablesComponent, FromEventComponent, IntervalComponent, OffromComponent, ToarrayComponent, CustomComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Comp1Component, Comp2Component, Comp3Component],
+  declarations: [ObservablesComponent, FromEventComponent, IntervalComponent, OffromComponent, ToarrayComponent, CustomComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Comp1Component, Comp2Component, Comp3Component, ReplaysubjectComponent, AsyncsubjectComponent, ConcatComponent, MergeComponent, MergemapComponent, ConcatmapComponent],
   imports: [
     CommonModule,
     ObservablesRoutingModule

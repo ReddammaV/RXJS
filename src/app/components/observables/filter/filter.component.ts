@@ -21,7 +21,7 @@ export class FilterComponent implements OnInit {
     { id: 4, name: 'Raghu', gender: 'Male' },
     { id: 5, name: 'Mohan', gender: 'Male' },
     { id: 6, name: 'Neha', gender: 'Female' },
-    { id: 7, name: 'Lucky', gender: 'Male' },
+    { id: 7, name: 'Aswin', gender: 'Male' },
     { id: 8, name: 'Janet', gender: 'Female' },
     { id: 9, name: 'Neeraj', gender: 'Male' },
     { id: 10, name: 'Sakshi', gender: 'Female' },

@@ -10,6 +10,7 @@ import { Location } from '@angular/common';
 })
 export class SubjectComponent implements OnInit, OnDestroy {
   userName: string;
+  replayNames: any;
 
   constructor(private apiService: ApiService, private location: Location) { }
 
@@ -20,6 +21,7 @@ export class SubjectComponent implements OnInit, OnDestroy {
       this.userName = res;
       console.log(res);
     })
+
   }
 
   goBack() {
