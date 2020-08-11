@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Observable, Subscription, interval, from, of, timer, fromEvent } from 'rxjs';
-import { ApiService } from 'src/app/core/services/api.service';
+import { ApiService } from '../../../core/services/api.service';
 import { map, toArray, pluck, filter, tap, take, takeLast, takeUntil, retry, retryWhen, delay, scan } from 'rxjs/operators';
 import 'rxjs/add/operator/map';
 import { HttpClient } from '@angular/common/http';

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Observable, Subscription, interval, from, of } from 'rxjs';
-import { ApiService } from 'src/app/core/services/api.service';
+import { ApiService } from '../../../core/services/api.service';
 import { map, toArray, pluck, filter } from 'rxjs/operators';
 import 'rxjs/add/operator/map';
 @Component({
